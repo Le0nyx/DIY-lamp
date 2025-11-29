@@ -2,8 +2,6 @@
 
 A feature-rich, interactive smart lamp powered by an ESP32. This project combines PWM LED control (White & RGB), an OLED display for animated "Dasai Mochi" style faces, and environmental monitoring using a DHT11 sensor.
 
-![Project Overview](assets/project_overview.jpg)
-
 
 ## Features
 
@@ -36,7 +34,6 @@ A feature-rich, interactive smart lamp powered by an ESP32. This project combine
 ### Wiring Diagram
 
 ![Wiring Diagram](assets/wiring_diagram.jpg)
-*(Place your wiring diagram image here)*
 
 **Pinout Configuration:**
 
@@ -84,8 +81,9 @@ A feature-rich, interactive smart lamp powered by an ESP32. This project combine
 
 ## Gallery
 
-![Lamp in Action](assets/lamp_action.jpg)
-*(Place a photo of the lamp running here)*
+![Lamp in Action #1](assets/lamp_action.jpg)
+
+![Lamp in Action #2](assets/lamp_action2.jpg)
 
 ![Web Interface](assets/web_interface.jpg)
-*(Place a screenshot of the web UI here)*
+
