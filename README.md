@@ -1,5 +1,17 @@
 # ESP32 Smart Lamp with Dasai Mochi Faces
 
+## Contents
+
+* [Features](#features)
+* [Hardware Setup](#hardware-setup)
+
+  * [Components](#components)
+  * [Wiring Diagram](#wiring-diagram)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Customization](#customization)
+* [Gallery](#gallery)
+
 A feature-rich, interactive smart lamp powered by an ESP32. This project combines PWM LED control (White & RGB), an OLED display for animated "Dasai Mochi" style faces, and environmental monitoring using a DHT11 sensor.
 
 ## Features
