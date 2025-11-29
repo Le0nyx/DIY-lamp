@@ -4,12 +4,10 @@
 #include <Adafruit_SSD1306.h>
 #include <WiFi.h>
 #include <WebServer.h>
-#include <DNSServer.h>
 #include <Preferences.h>
 #include <DHTesp.h>
 
 Preferences preferences;
-DNSServer dnsServer;
 int storedW[4] = {0, 0, 0, 0};
 int storedR = 0;
 int storedG = 0;
@@ -820,9 +818,6 @@ void setup() {
     Serial.print("AP IP address: ");
     Serial.println(IP);
 
-    // Captive Portal DNS
-    dnsServer.start(53, "*", IP);
-
     server.on("/", handleRoot);
     server.on("/getState", handleGetState);
     server.on("/setW", handleSetW);
@@ -836,19 +831,11 @@ void setup() {
     server.on("/setFaceMode", handleSetFaceMode);
     server.on("/setFaceConfig", handleSetFaceConfig);
     server.on("/setFaceCat", handleSetFaceCat);
-    
-    // Redirect all other requests to root (Captive Portal)
-    server.onNotFound([]() {
-        server.sendHeader("Location", String("http://") + WiFi.softAPIP().toString(), true);
-        server.send(302, "text/plain", "");
-    });
-
     server.begin();
     Serial.println("HTTP server started");
 }
 
 void loop() {
-    dnsServer.processNextRequest();
     server.handleClient();
     
     // Save settings if changed and stable for saveInterval
