@@ -1,4 +1,4 @@
-# ESP32 Smart Lamp with Dasai Mochi Faces
+# ESP32 Smart Lamp with Faces
 
 ## Contents
 
@@ -24,7 +24,7 @@ A feature-rich, interactive smart lamp powered by an ESP32. This project combine
   * Master Brightness and RGB Dimmer.
 * **OLED Display**:
 
-  * **Dasai Mochi Faces**: Animated, expressive faces that change every 7 seconds.
+  * **Faces**: Animated, expressive faces that change every 7 seconds.
   * **Smart Reactions**: Faces react to time of day (Sleepy, Night Owl) and temperature (Sweating if hot, Shivering if cold).
   * **Info Dashboard**: Displays current Time, Temperature, and Humidity at the bottom.
   * **Custom Text**: Send custom messages to the screen via the web UI.
